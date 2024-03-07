@@ -97,7 +97,7 @@
         <property name="geometry">
          <rect>
           <x>320</x>
-          <y>350</y>
+          <y>510</y>
           <width>211</width>
           <height>51</height>
          </rect>
@@ -134,6 +134,59 @@
          <string>LOGIN</string>
         </property>
        </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>350</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ingresar como:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_tipo_usuario">
+        <property name="geometry">
+         <rect>
+          <x>324</x>
+          <y>423</y>
+          <width>211</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Docente</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Coordinador</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>IEDD</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Consultor</string>
+         </property>
+        </item>
+       </widget>
       </widget>
       <widget class="QWidget" name="DocenteTab">
        <attribute name="title">
@@ -162,7 +215,7 @@
          <rect>
           <x>320</x>
           <y>480</y>
-          <width>181</width>
+          <width>201</width>
           <height>51</height>
          </rect>
         </property>
@@ -172,7 +225,130 @@
          </font>
         </property>
         <property name="text">
-         <string>Logout</string>
+         <string>Cerrar Sesion</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Coordinador</string>
+       </attribute>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>30</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Coordinador</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_Logout_2">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>480</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cerrar Sesion</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>IEDD</string>
+       </attribute>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>40</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>IEDD</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_Logout_3">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>460</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cerrar Sesion</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Consultor</string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>40</y>
+          <width>171</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>18</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Consultor</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="Btn_Logout_4">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>470</y>
+          <width>201</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Cerrar Sesion</string>
         </property>
        </widget>
       </widget>

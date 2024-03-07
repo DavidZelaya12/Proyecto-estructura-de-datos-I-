@@ -17,6 +17,9 @@ public:
     ~cframe();
 
     void buscarDocentes(QString username, QString password);
+    void buscarCoordinadores(QString username, QString password);
+    void buscarIEDD(QString username, QString password);
+    void buscarConsultores(QString username, QString password);
     void logout();
 
 private slots:

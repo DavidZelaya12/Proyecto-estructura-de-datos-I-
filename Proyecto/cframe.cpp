@@ -51,6 +51,66 @@ void cframe::buscarDocentes(QString username, QString password)
     }
 }
 
+void cframe::buscarCoordinadores(QString username, QString password)
+{
+    for (const user& usuario : coordinadores) {
+        if (usuario.getUsername() == username) {
+            userFound = true;
+            if (usuario.getPassword() == password) {
+                ui->tabWidget->setTabEnabled(0, false);
+                ui->tabWidget->setTabEnabled(1, false);
+                ui->tabWidget->setTabEnabled(2, true);
+                ui->tabWidget->setTabEnabled(3, false);
+                ui->tabWidget->setTabEnabled(4, false);
+                return;
+            } else {
+                QMessageBox::warning(this, "Error", "Contraseña incorrecta");
+                return;
+            }
+        }
+    }
+}
+
+void cframe::buscarIEDD(QString username, QString password)
+{
+    for (const user& usuario : IEDDs) {
+        if (usuario.getUsername() == username) {
+            userFound = true;
+            if (usuario.getPassword() == password) {
+                ui->tabWidget->setTabEnabled(0, false);
+                ui->tabWidget->setTabEnabled(1, false);
+                ui->tabWidget->setTabEnabled(2, false);
+                ui->tabWidget->setTabEnabled(3, true);
+                ui->tabWidget->setTabEnabled(4, false);
+                return;
+            } else {
+                QMessageBox::warning(this, "Error", "Contraseña incorrecta");
+                return;
+            }
+        }
+    }
+}
+
+void cframe::buscarConsultores(QString username, QString password)
+{
+    for (const user& usuario : consultores) {
+        if (usuario.getUsername() == username) {
+            userFound = true;
+            if (usuario.getPassword() == password) {
+                ui->tabWidget->setTabEnabled(0, false);
+                ui->tabWidget->setTabEnabled(1, false);
+                ui->tabWidget->setTabEnabled(2, false);
+                ui->tabWidget->setTabEnabled(3, false);
+                ui->tabWidget->setTabEnabled(4, true);
+                return;
+            } else {
+                QMessageBox::warning(this, "Error", "Contraseña incorrecta");
+                return;
+            }
+        }
+    }
+}
+
 void cframe::logout()
 {
     ui->LE_Username->clear();
@@ -77,56 +137,11 @@ void cframe::on_Btn_Login_clicked()
     if (ui->comboBox_tipo_usuario->currentIndex() == 0) {
         buscarDocentes(username, password);
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 1){
-        for (const user& usuario : coordinadores) {
-            if (usuario.getUsername() == username) {
-                userFound = true;
-                if (usuario.getPassword() == password) {
-                    ui->tabWidget->setTabEnabled(0, false);
-                    ui->tabWidget->setTabEnabled(1, false);
-                    ui->tabWidget->setTabEnabled(2, true);
-                    ui->tabWidget->setTabEnabled(3, false);
-                    ui->tabWidget->setTabEnabled(4, false);
-                    return;
-                } else {
-                    QMessageBox::warning(this, "Error", "Contraseña incorrecta");
-                    return;
-                }
-            }
-        }
+        buscarCoordinadores(username, password);
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 2){
-        for (const user& usuario : IEDDs) {
-            if (usuario.getUsername() == username) {
-                userFound = true;
-                if (usuario.getPassword() == password) {
-                    ui->tabWidget->setTabEnabled(0, false);
-                    ui->tabWidget->setTabEnabled(1, false);
-                    ui->tabWidget->setTabEnabled(2, false);
-                    ui->tabWidget->setTabEnabled(3, true);
-                    ui->tabWidget->setTabEnabled(4, false);
-                    return;
-                } else {
-                    QMessageBox::warning(this, "Error", "Contraseña incorrecta");
-                    return;
-                }
-            }
-        }
+        buscarIEDD(username, password);
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 3){
-        for (const user& usuario : consultores) {
-            if (usuario.getUsername() == username) {
-                userFound = true;
-                if (usuario.getPassword() == password) {
-                    ui->tabWidget->setTabEnabled(0, false);
-                    ui->tabWidget->setTabEnabled(1, false);
-                    ui->tabWidget->setTabEnabled(2, false);
-                    ui->tabWidget->setTabEnabled(3, false);
-                    ui->tabWidget->setTabEnabled(4, true);
-                    return;
-                } else {
-                    QMessageBox::warning(this, "Error", "Contraseña incorrecta");
-                    return;
-                }
-            }
-        }
+        buscarConsultores(username, password);
     }
 
     if (!userFound) {
