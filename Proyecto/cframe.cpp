@@ -1,6 +1,11 @@
 #include "cframe.h"
 #include "ui_cframe.h"
 #include <QMessageBox>
+#include <QApplication>
+#include <QMainWindow>
+using std::string;
+
+
 cframe::cframe(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::cframe)
@@ -122,6 +127,18 @@ void cframe::logout()
     ui->tabWidget->setTabEnabled(4, false);
 }
 
+void cframe::mostrarImagen(string ruta)
+{
+    QPixmap pixmap(ruta.c_str());
+    if (pixmap.isNull()) {
+        QMessageBox::warning(this, "Error", ruta.c_str());
+        return;
+    }
+
+    ui->imageLabel->setPixmap(pixmap);
+    ui->imageLabel->setScaledContents(true);
+}
+
 void cframe::on_Btn_Login_clicked()
 {
     QString username = ui->LE_Username->text().toLower();
@@ -136,6 +153,7 @@ void cframe::on_Btn_Login_clicked()
 
     if (ui->comboBox_tipo_usuario->currentIndex() == 0) {
         buscarDocentes(username, password);
+        mostrarImagen("silabo.jpg");
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 1){
         buscarCoordinadores(username, password);
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 2){

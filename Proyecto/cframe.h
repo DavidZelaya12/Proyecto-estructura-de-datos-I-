@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include <user.h>
+#include <iostream>
+#include <QPixmap>
+#include <QMessageBox>
+using std::string;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class cframe; }
@@ -21,6 +25,7 @@ public:
     void buscarIEDD(QString username, QString password);
     void buscarConsultores(QString username, QString password);
     void logout();
+    void mostrarImagen(string );
 
 private slots:
     void on_Btn_Login_clicked();
