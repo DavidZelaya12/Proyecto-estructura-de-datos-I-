@@ -218,6 +218,7 @@ debug/moc_cframe.cpp: ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qicon.h \
 		../Proyecto/user.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtCore/QString \
+<<<<<<< Updated upstream
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qpen.h \
@@ -228,6 +229,8 @@ debug/moc_cframe.cpp: ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qscrollarea.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qframe.h \
+=======
+>>>>>>> Stashed changes
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.12\5.12.12\mingw73_32\bin\moc.exe $(DEFINES) --include "C:/Users/dell/Downloads/U/Clases/Estructura de datos I/Proyecto-estructura-de-datos-I-/build-Proyecto-Desktop_Qt_5_12_12_MinGW_32_bit-Debug/debug/moc_predefs.h" -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/win32-g++ -I"C:/Users/dell/Downloads/U/Clases/Estructura de datos I/Proyecto-estructura-de-datos-I-/Proyecto" -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/include -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.12/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.12/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.12/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.12/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.12/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.12/Tools/mingw730_32/i686-w64-mingw32/include ..\Proyecto\cframe.h -o debug\moc_cframe.cpp
@@ -364,6 +367,7 @@ debug/main.o: ../Proyecto/main.cpp ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qicon.h \
 		../Proyecto/user.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtCore/QString \
+<<<<<<< Updated upstream
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qpen.h \
@@ -374,6 +378,8 @@ debug/main.o: ../Proyecto/main.cpp ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qscrollarea.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qframe.h \
+=======
+>>>>>>> Stashed changes
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -492,6 +498,7 @@ debug/cframe.o: ../Proyecto/cframe.cpp ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qicon.h \
 		../Proyecto/user.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtCore/QString \
+<<<<<<< Updated upstream
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/QGraphicsScene \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qgraphicsscene.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qpen.h \
@@ -513,6 +520,12 @@ debug/cframe.o: ../Proyecto/cframe.cpp ../Proyecto/cframe.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtGui/qinputmethod.h
+=======
+		ui_cframe.h \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/QMessageBox \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/include/QtWidgets/qdialog.h
+>>>>>>> Stashed changes
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\cframe.o ..\Proyecto\cframe.cpp
 
 debug/user.o: ../Proyecto/user.cpp ../Proyecto/user.h \

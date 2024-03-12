@@ -11,7 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+<<<<<<< Updated upstream
 #include <QtWidgets/QComboBox>
+=======
+>>>>>>> Stashed changes
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -37,6 +40,7 @@ public:
     QLineEdit *LE_Password;
     QPushButton *Btn_Login;
     QLabel *label_4;
+<<<<<<< Updated upstream
     QLabel *label_5;
     QComboBox *comboBox_tipo_usuario;
     QWidget *DocenteTab;
@@ -52,6 +56,11 @@ public:
     QWidget *tab_3;
     QLabel *label_8;
     QPushButton *Btn_Logout_4;
+=======
+    QWidget *DocenteTab;
+    QLabel *label_3;
+    QPushButton *Btn_Logout;
+>>>>>>> Stashed changes
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -89,7 +98,11 @@ public:
         LE_Password->setEchoMode(QLineEdit::Password);
         Btn_Login = new QPushButton(LoginTab);
         Btn_Login->setObjectName(QString::fromUtf8("Btn_Login"));
+<<<<<<< Updated upstream
         Btn_Login->setGeometry(QRect(320, 510, 211, 51));
+=======
+        Btn_Login->setGeometry(QRect(320, 350, 211, 51));
+>>>>>>> Stashed changes
         Btn_Login->setFont(font);
         Btn_Login->setAutoFillBackground(false);
         label_4 = new QLabel(LoginTab);
@@ -100,6 +113,7 @@ public:
         font1.setBold(true);
         font1.setWeight(75);
         label_4->setFont(font1);
+<<<<<<< Updated upstream
         label_5 = new QLabel(LoginTab);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(330, 350, 201, 41));
@@ -114,12 +128,15 @@ public:
         comboBox_tipo_usuario->setObjectName(QString::fromUtf8("comboBox_tipo_usuario"));
         comboBox_tipo_usuario->setGeometry(QRect(324, 423, 211, 41));
         comboBox_tipo_usuario->setFont(font2);
+=======
+>>>>>>> Stashed changes
         tabWidget->addTab(LoginTab, QString());
         DocenteTab = new QWidget();
         DocenteTab->setObjectName(QString::fromUtf8("DocenteTab"));
         label_3 = new QLabel(DocenteTab);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(330, 30, 171, 61));
+<<<<<<< Updated upstream
         label_3->setFont(font2);
         Btn_Logout = new QPushButton(DocenteTab);
         Btn_Logout->setObjectName(QString::fromUtf8("Btn_Logout"));
@@ -162,6 +179,16 @@ public:
         Btn_Logout_4->setGeometry(QRect(320, 470, 201, 51));
         Btn_Logout_4->setFont(font);
         tabWidget->addTab(tab_3, QString());
+=======
+        QFont font2;
+        font2.setPointSize(18);
+        label_3->setFont(font2);
+        Btn_Logout = new QPushButton(DocenteTab);
+        Btn_Logout->setObjectName(QString::fromUtf8("Btn_Logout"));
+        Btn_Logout->setGeometry(QRect(320, 480, 181, 51));
+        Btn_Logout->setFont(font);
+        tabWidget->addTab(DocenteTab, QString());
+>>>>>>> Stashed changes
 
         verticalLayout->addWidget(tabWidget);
 
@@ -176,7 +203,11 @@ public:
 
         retranslateUi(cframe);
 
+<<<<<<< Updated upstream
         tabWidget->setCurrentIndex(1);
+=======
+        tabWidget->setCurrentIndex(0);
+>>>>>>> Stashed changes
 
 
         QMetaObject::connectSlotsByName(cframe);
@@ -189,6 +220,7 @@ public:
         label_2->setText(QApplication::translate("cframe", "Usuario:", nullptr));
         Btn_Login->setText(QApplication::translate("cframe", "Iniciar Sesion", nullptr));
         label_4->setText(QApplication::translate("cframe", "LOGIN", nullptr));
+<<<<<<< Updated upstream
         label_5->setText(QApplication::translate("cframe", "Ingresar como:", nullptr));
         comboBox_tipo_usuario->setItemText(0, QApplication::translate("cframe", "Docente", nullptr));
         comboBox_tipo_usuario->setItemText(1, QApplication::translate("cframe", "Coordinador", nullptr));
@@ -209,6 +241,12 @@ public:
         label_8->setText(QApplication::translate("cframe", "Consultor", nullptr));
         Btn_Logout_4->setText(QApplication::translate("cframe", "Cerrar Sesion", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("cframe", "Consultor", nullptr));
+=======
+        tabWidget->setTabText(tabWidget->indexOf(LoginTab), QApplication::translate("cframe", "Login", nullptr));
+        label_3->setText(QApplication::translate("cframe", "Docente", nullptr));
+        Btn_Logout->setText(QApplication::translate("cframe", "Logout", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(DocenteTab), QApplication::translate("cframe", "Docente", nullptr));
+>>>>>>> Stashed changes
     } // retranslateUi
 
 };
