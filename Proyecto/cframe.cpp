@@ -154,6 +154,7 @@ void cframe::on_Btn_Login_clicked()
     if (ui->comboBox_tipo_usuario->currentIndex() == 0) {
         buscarDocentes(username, password);
         mostrarImagen("silabo.jpg");
+
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 1){
         buscarCoordinadores(username, password);
     } else if (ui->comboBox_tipo_usuario->currentIndex() == 2){
